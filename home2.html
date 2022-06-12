@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript</title>
+    <script src="./aula.js"></script>
+</head>
+
+<body>
+    <h1>Dev Aprender</h1>
+    <script>   
+     let   objetoServidor = {
+         acesso: true,
+         login:"mundojs",
+     };
+
+     let objetoServidor2 = {
+         erro: "Erro ao conectar o server"
+     };
+
+     function conexãoLogin(respostaDoServidor){
+    if (respostaDoServidor.erro == null) {
+        if(acesso){
+            console.log(`login: ${respostaDoServidor.login}`);
+        } else {
+            console.log("acesso negado!");
+            
+        }
+    } else {
+        console.log(respostaDoServidor.erro);}
+    }
+    </script>
+
+</body>
+</html>

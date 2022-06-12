@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript</title>
+    <script src="./aula.js"></script>
+</head>
+
+<body>
+    <h1>Dev Aprender</h1>
+    <script>   
+        //criar variável
+        let idade = 5;
+        console.log(idade);
+        let altura = 180;
+        console.log(altura);
+        //camelCase (para colocar nomes sem o espaço se usa a maiúscula )
+        //não precisa alterar os valores
+       
+        let familia = [26,45,67,78];
+        console.log(familia);
+
+        let corSite = "azul";
+        function resetaCor(cor) {
+            corSite= cor
+        }
+        console.log(corSite)
+        resetaCor('vermelho');
+        console.log(corSite);
+
+        function MultiplicarPorDois(valor){
+return valor*2
+}
+console.log(MultiplicarPorDois(5));
+let resultado =MultiplicarPorDois(5);
+console.log(resultado);
+let pontos=200;
+let tipo = pontos> 100 ? 'premium': 'comum';
+//priemrio verdadeiro, segundo se for falso
+console.log(tipo);
+let maiorDeIdade = true;
+let possuiCarteiraDeTrabalho = false;
+let podeAplicar = maiorDeIdade || possuiCarteiraDeTrabalho;
+console.log(podeAplicar);
+
+verificarVelocidade(90);
+function verificarVelocidade(velocidade) {
+const velocidadeMáxima = 70;
+const kmPorPonto = 5;
+if (velocidade <= velocidadeMáxima)
+console.log('ok');
+else {
+const pontos = Math.floor(((velocidade - velocidadeMáxima) / kmPorPonto));
+if (pontos >=12) 
+console.log('carteira suspensa');
+else 
+console.log('pontos', pontos);
+}
+}
+
+exibirTipo(5);
+const limite = 5
+function exibirTipo (limite){
+if (limite % 2 === 0)
+console.log( limite, 'par');
+else
+console.log ( limite, 'impar');
+}
+        </script>
+        
+</body>
+
+</html>
